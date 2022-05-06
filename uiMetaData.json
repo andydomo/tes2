@@ -1,0 +1,935 @@
+{
+  "name": "newRepoTest",
+  "connectorType": "datagrid",
+  "userId": null,
+  "domoClientId": null,
+  "domoClientSecret": null,
+  "additionalInfo": null,
+  "reportLength": 1,
+  "days": 7,
+  "reports": [
+    "msReport"
+  ],
+  "advancedReports": null,
+  "guid": "2080abbe-3f1d-485a-9044-0f227955cf6e",
+  "publishPrivate": true,
+  "visibilityType": {
+    "label": "Private to your company",
+    "value": "private"
+  },
+  "parameters": [
+    {
+      "name": "Full Name",
+      "type": "string",
+      "required": false,
+      "order": -1,
+      "options": [],
+      "command": null,
+      "helpText": null,
+      "showWhen": "",
+      "value": null,
+      "dateSelectorValue": null,
+      "$$hashKey": "object:258"
+    },
+    {
+      "name": "DOB",
+      "type": "dateSelector",
+      "required": false,
+      "order": 0,
+      "options": [],
+      "command": null,
+      "helpText": null,
+      "showWhen": "",
+      "value": null,
+      "dateSelectorValue": null,
+      "$$hashKey": "object:259"
+    },
+    {
+      "name": "Age",
+      "type": "integer",
+      "required": false,
+      "order": 1,
+      "options": [],
+      "command": null,
+      "helpText": null,
+      "showWhen": "",
+      "value": null,
+      "dateSelectorValue": null,
+      "$$hashKey": "object:260"
+    },
+    {
+      "name": "Gender",
+      "type": "dropdown",
+      "required": false,
+      "order": 2,
+      "options": [
+        {
+          "name": "Male",
+          "value": "Male"
+        },
+        {
+          "name": "Female",
+          "value": "Female"
+        }
+      ],
+      "command": null,
+      "helpText": null,
+      "showWhen": "",
+      "value": null,
+      "dateSelectorValue": null,
+      "$$hashKey": "object:261"
+    },
+    {
+      "name": "Area",
+      "type": "discovery",
+      "required": false,
+      "order": 3,
+      "options": [],
+      "command": {
+        "name": "Area",
+        "code": "var area = discovery.addNode(discovery.tree,\"area\");\ndiscovery.addLeaf(area, \"triangle\");\ndiscovery.addLeaf(area,\"square\");\ndiscovery.publishTree();",
+        "type": "tree"
+      },
+      "helpText": null,
+      "showWhen": "",
+      "value": null,
+      "dateSelectorValue": null,
+      "$$hashKey": "object:262",
+      "tree": {
+        "nodes": [
+          {
+            "expanded": false,
+            "label": "area",
+            "nodes": [
+              {
+                "expanded": false,
+                "label": "triangle",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:362"
+              },
+              {
+                "expanded": false,
+                "label": "square",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:363"
+              }
+            ],
+            "leaf": false,
+            "$$hashKey": "object:354"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Comment",
+      "type": "text",
+      "required": false,
+      "order": 4,
+      "options": [],
+      "command": null,
+      "helpText": null,
+      "showWhen": "",
+      "value": null,
+      "dateSelectorValue": null,
+      "$$hashKey": "object:263"
+    },
+    {
+      "name": "AREA1",
+      "type": "discovery",
+      "required": false,
+      "order": 5,
+      "options": [],
+      "command": {
+        "name": "AREA1",
+        "code": "var europe = discovery.addNode(discovery.tree,\"europe\");\ndiscovery.addLeaf(europe, \"germany\");\ndiscovery.addLeaf(europe,\"France\");\nvar Asia = discovery.addNode(discovery.tree,\"Asia\");\ndiscovery.addLeaf(Asia, \"Japan\");\ndiscovery.addLeaf(Asia,\"India\");\ndiscovery.publishTree();",
+        "type": "tree"
+      },
+      "helpText": "",
+      "showWhen": "",
+      "value": null,
+      "dateSelectorValue": null,
+      "$$hashKey": "object:264",
+      "tree": {
+        "nodes": [
+          {
+            "expanded": false,
+            "label": "europe",
+            "nodes": [
+              {
+                "expanded": false,
+                "label": "germany",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:391"
+              },
+              {
+                "expanded": false,
+                "label": "France",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:392"
+              }
+            ],
+            "leaf": false,
+            "$$hashKey": "object:376"
+          },
+          {
+            "expanded": false,
+            "label": "Asia",
+            "nodes": [
+              {
+                "expanded": false,
+                "label": "Japan",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:406"
+              },
+              {
+                "expanded": false,
+                "label": "India",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:407"
+              }
+            ],
+            "leaf": false,
+            "$$hashKey": "object:377"
+          }
+        ]
+      }
+    },
+    {
+      "name": "test",
+      "type": "discovery",
+      "required": false,
+      "order": 6,
+      "options": [],
+      "command": {
+        "name": "test",
+        "code": "var food = discovery.addNode(discovery.tree,\"food\");\ndiscovery.addLeaf(food, \"pizza\");\ndiscovery.addLeaf(food,\"burger\");\ndiscovery.publishTree();",
+        "type": "tree"
+      },
+      "helpText": null,
+      "showWhen": "",
+      "value": null,
+      "dateSelectorValue": null,
+      "$$hashKey": "object:265",
+      "tree": {
+        "nodes": [
+          {
+            "expanded": false,
+            "label": "food",
+            "nodes": [
+              {
+                "expanded": false,
+                "label": "pizza",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:428"
+              },
+              {
+                "expanded": false,
+                "label": "burger",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:429"
+              }
+            ],
+            "leaf": false,
+            "$$hashKey": "object:420"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ms",
+      "type": "string",
+      "required": false,
+      "order": 7,
+      "options": [],
+      "command": null,
+      "helpText": null,
+      "showWhen": "",
+      "value": null,
+      "dateSelectorValue": null,
+      "$$hashKey": "object:266"
+    },
+    {
+      "name": "newTest",
+      "type": "discovery",
+      "required": false,
+      "order": 8,
+      "options": [],
+      "command": {
+        "name": "newTest",
+        "code": null,
+        "type": "dropdown"
+      },
+      "helpText": null,
+      "showWhen": "",
+      "value": null,
+      "dateSelectorValue": null,
+      "$$hashKey": "object:267",
+      "tree": null
+    },
+    {
+      "name": "test",
+      "type": "discovery",
+      "required": false,
+      "order": 9,
+      "options": [],
+      "command": {
+        "name": "test",
+        "code": "var europe = discovery.addNode(discovery.tree,\"europe\");\ndiscovery.addLeaf(europe, \"germany\");\ndiscovery.addLeaf(europe,\"France\");\nvar Asia = discovery.addNode(discovery.tree,\"Asia\");\ndiscovery.addLeaf(Asia, \"Japan\");\ndiscovery.addLeaf(Asia,\"India\");\ndiscovery.publishTree();",
+        "type": "tree"
+      },
+      "helpText": null,
+      "showWhen": "",
+      "value": null,
+      "dateSelectorValue": null,
+      "$$hashKey": "object:268",
+      "tree": {
+        "nodes": [
+          {
+            "expanded": false,
+            "label": "europe",
+            "nodes": [
+              {
+                "expanded": false,
+                "label": "germany",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:457"
+              },
+              {
+                "expanded": false,
+                "label": "France",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:458"
+              }
+            ],
+            "leaf": false,
+            "$$hashKey": "object:442"
+          },
+          {
+            "expanded": false,
+            "label": "Asia",
+            "nodes": [
+              {
+                "expanded": false,
+                "label": "Japan",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:472"
+              },
+              {
+                "expanded": false,
+                "label": "India",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:473"
+              }
+            ],
+            "leaf": false,
+            "$$hashKey": "object:443"
+          }
+        ]
+      }
+    },
+    {
+      "name": "lp",
+      "type": "discovery",
+      "required": false,
+      "order": 10,
+      "options": [],
+      "command": {
+        "name": "lp",
+        "code": "var europe = discovery.addNode(discovery.tree,\"europe\");\ndiscovery.addLeaf(europe, \"germany\");\ndiscovery.addLeaf(europe,\"France\");\nvar Asia = discovery.addNode(discovery.tree,\"Asia\");\ndiscovery.addLeaf(Asia, \"Japan\");\ndiscovery.addLeaf(Asia,\"India\");\ndiscovery.publishTree();",
+        "type": "tree"
+      },
+      "helpText": null,
+      "showWhen": "",
+      "value": null,
+      "dateSelectorValue": null,
+      "$$hashKey": "object:269",
+      "tree": {
+        "nodes": [
+          {
+            "expanded": false,
+            "label": "europe",
+            "nodes": [
+              {
+                "expanded": false,
+                "label": "germany",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:501"
+              },
+              {
+                "expanded": false,
+                "label": "France",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:502"
+              }
+            ],
+            "leaf": false,
+            "$$hashKey": "object:486"
+          },
+          {
+            "expanded": false,
+            "label": "Asia",
+            "nodes": [
+              {
+                "expanded": false,
+                "label": "Japan",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:516"
+              },
+              {
+                "expanded": false,
+                "label": "India",
+                "leaf": true,
+                "nodes": [],
+                "$$hashKey": "object:517"
+              }
+            ],
+            "leaf": false,
+            "$$hashKey": "object:487"
+          }
+        ]
+      }
+    }
+  ],
+  "commands": null,
+  "showAdvanced": true,
+  "submittedVersion": 0,
+  "submittedMajorVersion": 0,
+  "publishedVersion": 0,
+  "workbenchEnabled": false,
+  "dataProviderCreated": false,
+  "description": null,
+  "tags": null,
+  "successResponseDefinition": null,
+  "errorResponseDefinition": null,
+  "updateCode": false,
+  "requestingCustomerId": null,
+  "ownerId": null,
+  "ownerCustomerId": null,
+  "parentGuid": null,
+  "testingProfiles": [
+    {
+      "name": "mahesh",
+      "value": [
+        {
+          "name": "Full Name",
+          "type": "string",
+          "required": false,
+          "order": -1,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "Mahesh",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "DOB",
+          "type": "dateSelector",
+          "required": false,
+          "order": 0,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": null,
+          "dateSelectorValue": {
+            "date": "specific",
+            "dateFrom": "relative",
+            "dateFromOffset": 1,
+            "dateFromPicker": "2021-12-21T05:57:43.937Z",
+            "dateOffset": 1,
+            "datePicker": null,
+            "dateTo": "relative",
+            "dateToOffset": 0,
+            "dateToPicker": "2021-12-21T05:57:43.937Z",
+            "dateType": "single_date",
+            "period": "currentWeek",
+            "timePeriod": "currentWeek",
+            "weekStartDay": "sunday"
+          }
+        },
+        {
+          "name": "Age",
+          "type": "integer",
+          "required": false,
+          "order": 1,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "33",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "Gender",
+          "type": "dropdown",
+          "required": false,
+          "order": 2,
+          "options": [
+            {
+              "name": "Male",
+              "value": "Male"
+            },
+            {
+              "name": "Female",
+              "value": "Female"
+            }
+          ],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "Male",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "Area",
+          "type": "discovery",
+          "required": false,
+          "order": 3,
+          "options": [],
+          "command": {
+            "name": "Area",
+            "code": "var europe = discovery.addNode(discovery.tree,\"europe\");\ndiscovery.addLeaf(europe, \"germany\");\ndiscovery.addLeaf(europe,\"France\");\nvar Asia = discovery.addNode(discovery.tree,\"Asia\");\ndiscovery.addLeaf(Asia, \"Japan\");\ndiscovery.addLeaf(Asia,\"India\");\ndiscovery.publishTree();",
+            "type": "tree"
+          },
+          "helpText": null,
+          "showWhen": "",
+          "value": "India",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "Comment",
+          "type": "text",
+          "required": false,
+          "order": 4,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "test comment",
+          "dateSelectorValue": null
+        }
+      ]
+    },
+    {
+      "name": "MAHESH1",
+      "value": [
+        {
+          "name": "Full Name",
+          "type": "string",
+          "required": false,
+          "order": -1,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "MAHESH1",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "DOB",
+          "type": "dateSelector",
+          "required": false,
+          "order": 0,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": null,
+          "dateSelectorValue": {
+            "date": "relative",
+            "dateFrom": "relative",
+            "dateFromOffset": 1,
+            "dateFromPicker": "2021-12-21T07:39:51.106Z",
+            "dateOffset": 1,
+            "datePicker": "2021-12-21T07:39:51.106Z",
+            "dateTo": "relative",
+            "dateToOffset": 0,
+            "dateToPicker": "2021-12-21T07:39:51.106Z",
+            "dateType": "single_date",
+            "period": "currentWeek",
+            "timePeriod": "currentWeek",
+            "weekStartDay": "sunday"
+          }
+        },
+        {
+          "name": "Age",
+          "type": "integer",
+          "required": false,
+          "order": 1,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "12",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "Gender",
+          "type": "dropdown",
+          "required": false,
+          "order": 2,
+          "options": [
+            {
+              "name": "Male",
+              "value": "Male"
+            },
+            {
+              "name": "Female",
+              "value": "Female"
+            }
+          ],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "Male",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "Area",
+          "type": "discovery",
+          "required": false,
+          "order": 3,
+          "options": [],
+          "command": {
+            "name": "Area",
+            "code": "var europe = discovery.addNode(discovery.tree,\"europe\");\ndiscovery.addLeaf(europe, \"germany\");\ndiscovery.addLeaf(europe,\"France\");\nvar Asia = discovery.addNode(discovery.tree,\"Asia\");\ndiscovery.addLeaf(Asia, \"Japan\");\ndiscovery.addLeaf(Asia,\"India\");\ndiscovery.publishTree();",
+            "type": "tree"
+          },
+          "helpText": null,
+          "showWhen": "",
+          "value": "Asia,Japan,India",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "Comment",
+          "type": "text",
+          "required": false,
+          "order": 4,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "AREA1",
+          "type": "discovery",
+          "required": false,
+          "order": 5,
+          "options": [],
+          "command": {
+            "name": "AREA1",
+            "code": "var europe = discovery.addNode(discovery.tree,\"europe\");\ndiscovery.addLeaf(europe, \"germany\");\ndiscovery.addLeaf(europe,\"France\");\nvar Asia = discovery.addNode(discovery.tree,\"Asia\");\ndiscovery.addLeaf(Asia, \"Japan\");\ndiscovery.addLeaf(Asia,\"India\");\ndiscovery.publishTree();",
+            "type": "tree"
+          },
+          "helpText": "",
+          "showWhen": "",
+          "value": "europe,germany,France",
+          "dateSelectorValue": null
+        }
+      ]
+    },
+    {
+      "name": "mahesh2",
+      "value": [
+        {
+          "name": "Full Name",
+          "type": "string",
+          "required": false,
+          "order": -1,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "MAHESH1",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "DOB",
+          "type": "dateSelector",
+          "required": false,
+          "order": 0,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": null,
+          "dateSelectorValue": {
+            "date": "relative",
+            "dateFrom": "relative",
+            "dateFromOffset": 1,
+            "dateFromPicker": "2021-12-21T07:48:15.702Z",
+            "dateOffset": 1,
+            "datePicker": "2021-12-21T07:39:51.106Z",
+            "dateTo": "relative",
+            "dateToOffset": 0,
+            "dateToPicker": "2021-12-21T07:48:15.702Z",
+            "dateType": "single_date",
+            "period": "currentWeek",
+            "timePeriod": "currentWeek",
+            "weekStartDay": "sunday"
+          }
+        },
+        {
+          "name": "Age",
+          "type": "integer",
+          "required": false,
+          "order": 1,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "12",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "Gender",
+          "type": "dropdown",
+          "required": false,
+          "order": 2,
+          "options": [
+            {
+              "name": "Male",
+              "value": "Male"
+            },
+            {
+              "name": "Female",
+              "value": "Female"
+            }
+          ],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "Male",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "Area",
+          "type": "discovery",
+          "required": false,
+          "order": 3,
+          "options": [],
+          "command": {
+            "name": "Area",
+            "code": "var europe = discovery.addNode(discovery.tree,\"europe\");\ndiscovery.addLeaf(europe, \"germany\");\ndiscovery.addLeaf(europe,\"France\");\nvar Asia = discovery.addNode(discovery.tree,\"Asia\");\ndiscovery.addLeaf(Asia, \"Japan\");\ndiscovery.addLeaf(Asia,\"India\");\ndiscovery.publishTree();",
+            "type": "tree"
+          },
+          "helpText": null,
+          "showWhen": "",
+          "value": "Asia,Japan,India",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "Comment",
+          "type": "text",
+          "required": false,
+          "order": 4,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "AREA1",
+          "type": "discovery",
+          "required": false,
+          "order": 5,
+          "options": [],
+          "command": {
+            "name": "AREA1",
+            "code": "var europe = discovery.addNode(discovery.tree,\"europe\");\ndiscovery.addLeaf(europe, \"germany\");\ndiscovery.addLeaf(europe,\"France\");\nvar Asia = discovery.addNode(discovery.tree,\"Asia\");\ndiscovery.addLeaf(Asia, \"Japan\");\ndiscovery.addLeaf(Asia,\"India\");\ndiscovery.publishTree();",
+            "type": "tree"
+          },
+          "helpText": "",
+          "showWhen": "",
+          "value": "europe,germany,France",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "test",
+          "type": "discovery",
+          "required": false,
+          "order": 6,
+          "options": [],
+          "command": {
+            "name": "test",
+            "code": "var europe = discovery.addNode(discovery.tree,\"europe\");\ndiscovery.addLeaf(europe, \"germany\");\ndiscovery.addLeaf(europe,\"France\");\nvar Asia = discovery.addNode(discovery.tree,\"Asia\");\ndiscovery.addLeaf(Asia, \"Japan\");\ndiscovery.addLeaf(Asia,\"India\");\ndiscovery.publishTree();",
+            "type": "tree"
+          },
+          "helpText": null,
+          "showWhen": "",
+          "value": "Asia,Japan,India",
+          "dateSelectorValue": null
+        }
+      ]
+    },
+    {
+      "name": "mahesh3",
+      "value": [
+        {
+          "name": "Full Name",
+          "type": "string",
+          "required": false,
+          "order": -1,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "MAHESH3",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "DOB",
+          "type": "dateSelector",
+          "required": false,
+          "order": 0,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": null,
+          "dateSelectorValue": {
+            "date": "relative",
+            "dateFrom": "relative",
+            "dateFromOffset": 1,
+            "dateFromPicker": "2021-12-21T07:48:15.702Z",
+            "dateOffset": 1,
+            "datePicker": "2021-12-21T07:39:51.106Z",
+            "dateTo": "relative",
+            "dateToOffset": 0,
+            "dateToPicker": "2021-12-21T07:48:15.702Z",
+            "dateType": "single_date",
+            "period": "currentWeek",
+            "timePeriod": "currentWeek",
+            "weekStartDay": "sunday"
+          }
+        },
+        {
+          "name": "Age",
+          "type": "integer",
+          "required": false,
+          "order": 1,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "12",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "Gender",
+          "type": "dropdown",
+          "required": false,
+          "order": 2,
+          "options": [
+            {
+              "name": "Male",
+              "value": "Male"
+            },
+            {
+              "name": "Female",
+              "value": "Female"
+            }
+          ],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "Male",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "Area",
+          "type": "discovery",
+          "required": false,
+          "order": 3,
+          "options": [],
+          "command": {
+            "name": "Area",
+            "code": "var area = discovery.addNode(discovery.tree,\"area\");\ndiscovery.addLeaf(area, \"triangle\");\ndiscovery.addLeaf(area,\"square\");\ndiscovery.publishTree();",
+            "type": "tree"
+          },
+          "helpText": null,
+          "showWhen": "",
+          "value": "Asia,Japan,India,square",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "Comment",
+          "type": "text",
+          "required": false,
+          "order": 4,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "AREA1",
+          "type": "discovery",
+          "required": false,
+          "order": 5,
+          "options": [],
+          "command": {
+            "name": "AREA1",
+            "code": "var europe = discovery.addNode(discovery.tree,\"europe\");\ndiscovery.addLeaf(europe, \"germany\");\ndiscovery.addLeaf(europe,\"France\");\nvar Asia = discovery.addNode(discovery.tree,\"Asia\");\ndiscovery.addLeaf(Asia, \"Japan\");\ndiscovery.addLeaf(Asia,\"India\");\ndiscovery.publishTree();",
+            "type": "tree"
+          },
+          "helpText": "",
+          "showWhen": "",
+          "value": "europe,germany,France",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "test",
+          "type": "discovery",
+          "required": false,
+          "order": 6,
+          "options": [],
+          "command": {
+            "name": "test",
+            "code": "var food = discovery.addNode(discovery.tree,\"food\");\ndiscovery.addLeaf(food, \"pizza\");\ndiscovery.addLeaf(food,\"burger\");\ndiscovery.publishTree();",
+            "type": "tree"
+          },
+          "helpText": null,
+          "showWhen": "",
+          "value": "Asia,Japan,India,food,pizza,burger",
+          "dateSelectorValue": null
+        },
+        {
+          "name": "ms",
+          "type": "string",
+          "required": false,
+          "order": 7,
+          "options": [],
+          "command": null,
+          "helpText": null,
+          "showWhen": "",
+          "value": "",
+          "dateSelectorValue": null
+        }
+      ]
+    }
+  ],
+  "visible": true
+}
